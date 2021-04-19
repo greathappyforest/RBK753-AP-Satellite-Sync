@@ -59,5 +59,15 @@ Note: if you saw other unconsistance config, please telnet into router and satel
 Good Luck!
 
 
+Router:
+![image](https://user-images.githubusercontent.com/9340215/115300303-a71c4e00-a114-11eb-83a3-0179f169c71c.png)
+
+Satellite1:
+![image](https://user-images.githubusercontent.com/9340215/115300407-ca46fd80-a114-11eb-9d67-8cb878bce2d7.png)
+
+Satellite2:
+![image](https://user-images.githubusercontent.com/9340215/115300486-e054be00-a114-11eb-95af-4fec4d1fad9c.png)
+
+
 
 
