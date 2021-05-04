@@ -72,6 +72,6 @@ Good Luck!
 
 
 
-Created a telegram channel if need me help:
+Created a telegram channel for more discussion:
 https://t.me/joinchat/ulfNA-7T0OU0OTkx
 
