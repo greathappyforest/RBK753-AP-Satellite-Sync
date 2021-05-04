@@ -2,10 +2,6 @@
 Share - RBK753 AP Mode satellite ssid/encryption type/key not consistance with router
 
 
-Created a telegram channel if need me help:
-https://t.me/joinchat/ulfNA-7T0OU0OTkx
-
-
 ### Prepare:
 * Setup your router wifi config first:
   * Set up router as AP mode
@@ -74,4 +70,8 @@ Good Luck!
 
 
 
+
+
+Created a telegram channel if need me help:
+https://t.me/joinchat/ulfNA-7T0OU0OTkx
 
