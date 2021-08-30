@@ -1,0 +1,65 @@
+https://community.netgear.com/t5/Orbi-AX/RBK750-Series-Firmware-Update-v4-6-3-7/m-p/2131307#M18670
+
+From Xcelebric
+
+Here is the latest update from my trying:
+
+1.  Downgrade the Firmware to  V3.2.10.10  for both Router and the Satellite, which is the very first Firmware version.   Using the way I mentioned in previous thread that pressing F12 in the downgrade page and unhide the Yes button. 
+
+
+This Firmware version has Telnet option on Debug page.   
+
+2. After that, perform factory reset on both  Router and the Satellite.
+
+3. Finish basic configuration, but DO NOT connect to internet yet. 
+
+4. Enable Telnet option on both Router and the Satellite in their Debug.html page. 
+
+5. Telnet connect to both devices, and ran the following:
+
+nvram set auto_upgrade_enable=0
+nvram set ver_check_https_svr1=http.fw.updates1.aaa.com
+nvram set ver_check_ftp_svr1=updates1.aaa.com
+nvram set ver_check_ftp_svr2=updates1.aaa.com
+nvram set ver_check_ftp_svr3=updates1.aaa.com
+nvram set lang_check_ftp_svr=updates1.aaa.com
+nvram set install_fw_upgrade_latest=0
+nvram set ver_check_enable=0
+nvram set ver_check_ftp_password=aaa@aaa
+nvram set control_cloud_backend_fw_url=https://http.fw.updates1.aaa.com
+nvram set promotion_server=updates1.aaa.com
+nvram commit
+
+ 
+
+6. Make sure the above run on both devices. 
+
+7. Go to Managment page -> Advanced -> Security -> Block Sites :
+     a. Keyword Block set to "Always"
+
+     b. Add the following key words:
+         http.fw.updates1.netgear.com
+
+         updates1.netgear.com
+
+     c. Click Apply. 
+
+ 
+
+8. Perform a Soft reboot from Advanced Home : -> Reboot -> Connect back to the Internet. 
+
+ 
+
+9. After that, my firmware update page showing this:
+
+ 
+
+Status:
+
+
+Router    RBR750        RBR750            V3.2.10.10     Service unreachable
+Satellite  RBS750       Orbi Satellite-1   V3.2.10.10     Service unreachable
+
+ 
+
+10, I will monitor for a day or so to see if this works. 
